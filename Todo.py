@@ -18,7 +18,8 @@ todos=[]
 while True:
     print("\nType \"add\" to add a todos")
     print("Type \"show\" to view your todos")
-    print("Type \"del\" to delete one of your todo\n")
+    print("Type \"del\" to delete one of your todo")
+    print("Type \"exit\" to exit the application\n")
     user_action=input("Enter Your action:-")
 
     match user_action:
@@ -34,3 +35,7 @@ while True:
             delete=input("Enter the todo to remove it")
             todos.remove(delete.capitalize())
             print(f"{delete.capitalize()} removed successfully \n")
+        case "exit":
+            break
+
+print("Goodbye")
