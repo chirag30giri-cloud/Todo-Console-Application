@@ -22,6 +22,7 @@ while True:
     print("Type \"exit\" to exit the application\n")
     user_action=input("Enter Your action:-")
 
+    
     match user_action:
         case "add":
             todo=input("Enter a todo:-")
@@ -33,6 +34,7 @@ while True:
             print("\n")
         case "del":
             delete=input("Enter the todo to remove it")
+            
             todos.remove(delete.capitalize())
             print(f"{delete.capitalize()} removed successfully \n")
         case "exit":
